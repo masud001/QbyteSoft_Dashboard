@@ -1,0 +1,109 @@
+.dashboard__header {
+	height: 55px;
+	.navigation__bar {
+		height: 100%;
+		padding: 0rem 1rem !important;
+		background-color: #fff;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+		.navbar-brand {
+			padding: 0px !important;
+		}
+	}
+	.right__navbar__wrapper {
+		height: 100%;
+		.right__navbar {
+			line-height: 55px;
+			li {
+				display: inline-block;
+				border-left: 1px solid #f1f1f1;
+				border-right: none;
+				margin-right: -3px;
+				a {
+					display: block;
+					text-decoration: none;
+					padding: 0rem 1rem;
+					i {
+						color: $icon-color;
+					}
+				}
+				&:hover {
+					background-color: $hover-bg-color;
+				}
+				&.dropdown {
+					a {
+						position: relative;
+						span.label__primary {
+							background-color: $badge-color;
+							font-size: 8px;
+							padding: 1px 3px;
+							line-height: 10px;
+							position: absolute;
+							display: block;
+							color: #fff;
+							top: 35%;
+							left: 69%;
+							transform: translate(-50%, -50%);
+							border-radius: 4px;
+						}
+					}
+					.dropdown-menu {
+						&.message__list {
+							min-width: 25rem !important;
+							padding: 0rem 0rem !important;
+							border-radius: 0rem !important;
+							width: 25rem;
+
+							.message__list__wrapper {
+								height: 250px;
+								overflow-y: auto;
+								box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05),
+									0 1px 0 rgba(0, 0, 0, 0.05);
+								.message {
+									padding: 10px 10px 5px 10px;
+									border-bottom: 1px solid #f1f1f1;
+
+									img.message__avatar {
+										width: 35px;
+										height: 35px;
+										border-radius: 50%;
+										display: flex;
+										float: left;
+									}
+									.message__body {
+										line-height: 1rem;
+										width: 100%;
+										padding-left: 45px;
+										display: block;
+										a {
+											padding: 0rem;
+											color: $link-color;
+										}
+										.message__subject {
+											display: block;
+											margin-bottom: 2px;
+											width: 100%;
+											text-overflow: ellipsis;
+											white-space: nowrap;
+											overflow: hidden;
+											font-size: 14px;
+										}
+										.message__description {
+											display: inline;
+											font-size: 0.75rem;
+											span {
+												a {
+													display: inline-block;
+													color: $link-color;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

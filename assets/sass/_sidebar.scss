@@ -1,0 +1,64 @@
+.dashboard__sidebar__section {
+	width: 210px;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	float: left;
+	left: 0;
+	top: 55px;
+	padding: 0rem 0rem 0rem 0rem;
+	transition: all 0.5s ease 0s;
+	background-color: $sidebar-bg-color;
+
+	.sidebar__wrapper {
+		ul {
+			li {
+				position: relative;
+				outline: 0;
+				a {
+					padding: 11px 20px 11px 16px;
+					color: $sidebar-menu-color;
+					display: block;
+					text-decoration: none;
+					
+					}
+					.dropdown__indicator {
+						position: relative;
+						right: -32%;
+						top: 50%;
+						transform-origin: left;
+						transform: translate(50%, -54%) rotate(0deg);
+					}
+
+					&:hover {
+						background-color: $hover-bg-color;
+						color: $sidebar-bg-color;
+						text-decoration: none;
+						outline: 0;
+					}
+				}
+				&.current {
+					a {
+						background-color: $hover-bg-color;
+						color: $sidebar-bg-color;
+						outline: 0;
+					}
+					.sidebar__sub__menu__section {
+						li {
+							a {
+								background-color: #ffffff !important;
+								color: $sidebar-bg-color;
+								&:hover {
+									background-color: $hover-bg-color !important;
+									color: $sidebar-bg-color !important;
+									text-decoration: none;
+									outline: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

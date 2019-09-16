@@ -3,4 +3,10 @@
 @import "./_variables";
 @import "../.././node_modules/bootstrap/scss/bootstrap.scss";
 @import "./_reset";
+
+// header section css
+@import "./header/header_logo";
+@import "./header/_header_message_nav";
+@import "./header/_header_notifications_nav";
 @import "./_sidebar";
+@import "./_main_body";
